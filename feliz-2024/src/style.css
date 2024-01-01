@@ -1,0 +1,55 @@
+h1{
+  font-family:"Montserrat";
+  text-align: center;
+    float: center;
+    width: auto;
+    height: auto;
+    color:white;
+    font-size: 50px;
+   text-shadow: 0px 0px 15px rgba(255,223,0,1);
+}
+
+.time{
+    font-family:"Nabla";
+    text-align: center;
+    float: center;
+    width: auto;
+    height: auto;
+    font-size:50px;
+  text-shadow: 0px 0px 15px rgba(255,223,0,1);
+
+}
+.text{
+    font-family:"Montserrat";
+    text-align: center;
+    float: center;
+    width: auto;
+    height: auto;
+    font-size:15px;
+    color:white
+      
+
+}
+
+.global{
+  background-color: #001650;
+background-image: url("https://media.giphy.com/media/l1J3DaHzWEp2bTpYs/giphy.gif");
+background-repeat: 'norepeat'
+ border-radius: 42px 42px 42px 42px;
+-webkit-border-radius: 42px 42px 42px 42px;
+-moz-border-radius: 42px 42px 42px 42px;
+   text-align: center;
+   float:center;
+   height:600px;
+   width: auto;
+}
+
+
+body{
+background-color:black;
+}
+
+iframe{
+   text-align: center;
+   float:center;
+}
