@@ -3,23 +3,24 @@ var minDisplay = document.getElementById("min");
 var secDisplay = document.getElementById("sec");
 
 function refreshTime() {
-  now = new Date();
+  var now = new Date();
   
-  var countdownH = 24 - parseInt(now.getHours());
-  var countdownM = 60 - parseInt(now.getMinutes());
-  var countdownS = 60 - parseInt(now.getSeconds());
+  var countdownH = 23 - now.getHours();
+  var countdownM = 59 - now.getMinutes();
+  var countdownS = 59 - now.getSeconds();
   
-
-  
-  if (countdownS == 60){
-    countdownM = countdownM + 1 ;
-    countdownS = "0";
+  if (countdownS < 10){
+    countdownS = "0" + countdownS;
   }
-  if (countdownH == 24) {
-    countdownH = "00";
+  if (countdownM < 10){
+    countdownM = "0" + countdownM;
+  }
+  if (countdownH < 10) {
+    countdownH = "0" + countdownH;
+  }
+  
+  if (countdownH == "00" && countdownM == "00" && countdownS == "00") {
     window.location.href="https://www.canva.com/design/DAF4l-GpPNk/HkTawAEOiiTEjPlcEHpoxg/edit?utm_content=DAF4l-GpPNk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
-    
-    
   }
   
   hourDisplay.innerHTML = countdownH;
